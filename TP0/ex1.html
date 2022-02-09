@@ -1,0 +1,33 @@
+///////HTML//////
+<body>
+<h1> calculer sur les figure </h1>
+<p> clique sur le button pou claculer le prérimétre d'un cercle </p>
+<button onclick=perimetreC()>Lancer la fonction </button>
+
+<p> clique sur le button pou claculer le prérimétre d'un rectrangle </p>
+<button onclick=perimetreR()>Lancer la fonction </button>
+<p id="res1" > </p>
+<p id="res2 > </p>
+</body>
+
+
+//////////JS////////
+funtion perimetreC(){
+const pi=3.14 ;
+let r=prompt("saiser le rayon");
+let res=r*2*pi;
+alert("le premiere cercle"+res.toFixed(2));
+console.log(res.toFixed(2));
+document.getElementById("res1").innerHTML=res;
+}
+
+
+function perimetreR(){
+Let largeur=prompt("saisier largueur");
+let longueur=prompt("saisier longueur");
+var res=(largeur+longueur)*2 ;
+alert("le premiere d un rectangle est "+res.toFixed(2));
+console.log(res.toFixed(2));
+document.getElementById("res2").innerHTML=res;
+}
+
