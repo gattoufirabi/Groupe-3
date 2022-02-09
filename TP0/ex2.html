@@ -1,0 +1,15 @@
+//////HTML////
+<body>
+<h1> AFFICHAGE DE JOUR DE LA SEMAINE<h1>
+<button onclick="date()>jour de la semaine </button>
+<fielset>
+<input type="textbox" id ="res">
+</fielset>
+</body>
+
+//////////JS/////////
+function date() {
+var date=new Date()
+var tab_jour=new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+document.getElementById("res").innerHTML=(tab_jour[date.getDay()]) ;
+}
