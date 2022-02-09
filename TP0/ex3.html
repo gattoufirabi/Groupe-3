@@ -1,0 +1,31 @@
+<!DOCTYPE HTML >
+<html>
+<head>
+	<title> table de multiplication </title>
+	
+	<script type="text/javascript">
+		
+		function table_multiplication(nb)
+		{
+
+		var i;
+		for (i=0; i<=10; i++) {
+		    resultat=nb*i;
+			document.write(nb+" x "+i+"="+nb*i+"<br>");
+			                  }
+		}					  
+		
+	</script>
+	
+</head>
+<body >
+
+	<script type="text/javascript">
+			
+			nb=window.prompt("Entrez le numéro de la table:","saisir un entier ici ");
+			table_multiplication(nb);
+			
+	</script>
+	
+</body>
+</html>
