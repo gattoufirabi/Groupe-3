@@ -1,0 +1,94 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Autocomplete Search Box | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+
+        <div class="overlay-icone-chargement">
+            <img src="ressources/chargement/circles.svg" alt="logo chargement">
+        </div>
+
+        <h1>Application météo</h1>
+
+        <div class="bloc-logo-info">
+
+            <div class="bloc-logo">
+                <img src="./ressources/jour/04d.svg" alt="logo du temps qu'il fait" class="logo-meteo">
+            </div>
+
+            <div class="bloc-info">
+                <p class="temps"></p>
+                <p class="temperature"></p>
+                <p class="localisation"></p>
+            </div>
+
+        </div>
+
+
+        <div class="heure-bloc-prevision">
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+            </div>
+        </div>
+
+    </div>
+    <script type="module" src="js/script.js"></script>
+
+
+    <div class="wrapper">
+        <button type="button" class="recherche-boutton" onclick="cherche()">Afficher la meteo</button>
+ <div class="clic">    
+ <div>
+  <input type="checkbox" id="semaine" class="semaine" checked>
+  <label for="semaine">Par semaine</label>
+</div>
+
+<div>
+  <input type="checkbox" id="Heure" class="heure">
+  <label for="heure">Par heure</label>
+</div>
+
+</div>  
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="Type to search..">
+        <div class="autocom-box">
+          <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+     <script src="js/suggestions.js"></script> 
+     <script src="js/script.js"></script> 
+  </body>
+</html>
